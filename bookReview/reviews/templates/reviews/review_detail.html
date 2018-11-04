@@ -1,0 +1,10 @@
+{% extends 'reviews/base.html' %}
+
+{% block title %}
+<h2><a href="{% url 'reviews:Book_detail' review.Book.id %}">{{ review.Book.name }}</a></h2>
+{% endblock %}
+
+{% block content %}
+<p>{{ review.pub_date }}</p>
+<p>{{ review.comment }}</p>
+{% endblock %}
